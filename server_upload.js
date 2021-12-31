@@ -40,6 +40,10 @@ app.get("/files", (req, res) => {
   });
 });
 
+app.get("/", (req, res) => {
+    res.send("Welcome to uploader!");
+});
+
 app.listen(3000, (req, res) => {
  console.log("App is listening on port 3000 ...");
 });
